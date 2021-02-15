@@ -1,0 +1,18 @@
+p {
+  font-family: Lato;
+}
+
+.basic-style
+{
+  border: solid 1px #cccccc;
+  font-weight: normal;
+  color: black;
+
+
+}
+
+.clicked-style
+{
+  font-weight: bold;
+  color: red;
+}
