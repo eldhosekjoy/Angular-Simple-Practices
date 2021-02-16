@@ -1,34 +1,25 @@
-import { Component, VERSION } from '@angular/core';
+import { Component, VERSION } from "@angular/core";
 
 @Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
+  selector: "my-app",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"]
 })
-export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
+export class AppComponent {
+  name = "Angular " + VERSION.major;
   stateflag = false;
-  stclassname = 'basic-style';
+  stclassname = "basic-style";
 
-  toggleclass()
-  {
+  toggleclass() {
     //this.stateflag = !this.stateflag;
     // return this.stclassname;
-    return{
-      'basic-style' : !this.stateflag,
-      'clicked-style' : this.stateflag
-    }
+    return {
+      myButton: !this.stateflag,
+      myButton2: this.stateflag
+    };
   }
 
-  btclick()
-  {
-    this.stateflag = ! this.stateflag;
+  btclick() {
+    this.stateflag = !this.stateflag;
   }
-
 }
-
-
-
-
-
-
